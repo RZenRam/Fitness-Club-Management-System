@@ -1,0 +1,489 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BDA13C53-818F-4D9D-B435-4F8F5269B43C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Fitness_club</RootNamespace>
+    <AssemblyName>Fitness_club</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINDOWS\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="aboutus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="aboutus.Designer.cs">
+      <DependentUpon>aboutus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addequipment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addequipment.Designer.cs">
+      <DependentUpon>addequipment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addinstructor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addinstructor.Designer.cs">
+      <DependentUpon>addinstructor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addmember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addmember.Designer.cs">
+      <DependentUpon>addmember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addplan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addplan.Designer.cs">
+      <DependentUpon>addplan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bill_for_fees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bill_for_fees.Designer.cs">
+      <DependentUpon>bill_for_fees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bill_for_member.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>bill_for_member.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Content.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Content.Designer.cs">
+      <DependentUpon>Content.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Database.cs" />
+    <Compile Include="editequipment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editequipment.Designer.cs">
+      <DependentUpon>editequipment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="editinstructor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editinstructor.Designer.cs">
+      <DependentUpon>editinstructor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="editmember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editmember.Designer.cs">
+      <DependentUpon>editmember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="editplan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editplan.Designer.cs">
+      <DependentUpon>editplan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fees.Designer.cs">
+      <DependentUpon>fees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="History.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="History.Designer.cs">
+      <DependentUpon>History.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="aboutus.resx">
+      <DependentUpon>aboutus.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addequipment.resx">
+      <DependentUpon>addequipment.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addinstructor.resx">
+      <DependentUpon>addinstructor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addmember.resx">
+      <DependentUpon>addmember.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addplan.resx">
+      <DependentUpon>addplan.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bill_for_fees.resx">
+      <DependentUpon>bill_for_fees.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bill_for_member.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>bill_for_member.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content.resx">
+      <DependentUpon>Content.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editequipment.resx">
+      <DependentUpon>editequipment.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editinstructor.resx">
+      <DependentUpon>editinstructor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editmember.resx">
+      <DependentUpon>editmember.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editplan.resx">
+      <DependentUpon>editplan.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fees.resx">
+      <DependentUpon>fees.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="History.resx">
+      <DependentUpon>History.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="UtilityDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UtilityDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UtilityDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UtilityDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UtilityDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UtilityDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UtilityDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UtilityDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UtilityDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UtilityDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UtilityDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UtilityDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UtilityDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UtilityDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UtilityDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UtilityDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UtilityDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UtilityDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UtilityDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UtilityDataSet9.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trainers.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gym.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2059660171_c428b6cedc.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gym.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WorldGymSEbarbelllogo.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Resources\1265618_newcommercialspinningbiketr-950a.jpg" />
+    <None Include="UtilityDataSet.xsc">
+      <DependentUpon>UtilityDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="UtilityDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UtilityDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UtilityDataSet.xss">
+      <DependentUpon>UtilityDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="UtilityDataSet1.xsc">
+      <DependentUpon>UtilityDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="UtilityDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UtilityDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UtilityDataSet1.xss">
+      <DependentUpon>UtilityDataSet1.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gym_main.jpg" />
+    <None Include="UtilityDataSet2.xsc">
+      <DependentUpon>UtilityDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="UtilityDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UtilityDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UtilityDataSet2.xss">
+      <DependentUpon>UtilityDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="UtilityDataSet3.xsc">
+      <DependentUpon>UtilityDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="UtilityDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UtilityDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UtilityDataSet3.xss">
+      <DependentUpon>UtilityDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\gym rat.jpg" />
+    <None Include="Resources\300image_back5936.jpg" />
+    <None Include="UtilityDataSet4.xsc">
+      <DependentUpon>UtilityDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="UtilityDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UtilityDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UtilityDataSet4.xss">
+      <DependentUpon>UtilityDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\1_gymempty.jpg" />
+    <None Include="UtilityDataSet5.xsc">
+      <DependentUpon>UtilityDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="UtilityDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UtilityDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UtilityDataSet5.xss">
+      <DependentUpon>UtilityDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="UtilityDataSet6.xsc">
+      <DependentUpon>UtilityDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="UtilityDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UtilityDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UtilityDataSet6.xss">
+      <DependentUpon>UtilityDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="UtilityDataSet7.xsc">
+      <DependentUpon>UtilityDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="UtilityDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UtilityDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UtilityDataSet7.xss">
+      <DependentUpon>UtilityDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="UtilityDataSet8.xsc">
+      <DependentUpon>UtilityDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="UtilityDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UtilityDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UtilityDataSet8.xss">
+      <DependentUpon>UtilityDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="UtilityDataSet9.xsc">
+      <DependentUpon>UtilityDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="UtilityDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UtilityDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UtilityDataSet9.xss">
+      <DependentUpon>UtilityDataSet9.xsd</DependentUpon>
+    </None>
+    <Content Include="Utility.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
